@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 9002
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+turbine:
+  app-config: cart-server
+  cluster-name-expression: cart
+  combine-host-port: true
+
+
