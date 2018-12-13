@@ -5,9 +5,12 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://eureka.springcloud.cn/eureka/
+  instance:
+    prefer-ip-address: true
 spring:
   application:
     name: admin-server
+
 
 
